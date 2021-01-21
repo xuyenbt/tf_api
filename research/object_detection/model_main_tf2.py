@@ -28,12 +28,12 @@ python model_main_tf2.py -- \
   --alsologtostderr
 """
 import sys
-sys.path.append('../input/gg-research/research')
+sys.path.append('/kaggle/working/tf_api/research')
+print(sys.path)
 
 from absl import flags
 import tensorflow.compat.v2 as tf
 from object_detection import model_lib_v2
-
 
 
 flags.DEFINE_string('pipeline_config_path', None, 'Path to pipeline config '
